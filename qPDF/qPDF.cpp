@@ -14,11 +14,9 @@ qPDF::qPDF(QWidget *parent)
     connect(ui.pushButtonPreviousPage, SIGNAL(clicked()), this, SLOT(OnPreviousPage()));
     connect(ui.pushButtonNextPage, SIGNAL(clicked()), this, SLOT(OnNextPage()));
 
-    ui.pushButtonFirstPage->setDisabled(true);
-    ui.pushButtonPreviousPage->setDisabled(true);
-    ui.labelPageCount->setText("0/0");
-    ui.pushButtonNextPage->setDisabled(true);
-    ui.pushButtonLastPage->setDisabled(true);
+    UpdatePage();
+
+    LoadZoomList();
 }
 
 qPDF::~qPDF()
@@ -114,7 +112,7 @@ int qPDF::UpdatePage()
         m_current_page_number = 0;
         ui.pushButtonFirstPage->setDisabled(true);
         ui.pushButtonPreviousPage->setDisabled(true);
-        ui.labelPageCount->setText("0/0");
+        ui.lineEditPageCount->setText("0/0");
         ui.pushButtonNextPage->setDisabled(true);
         ui.pushButtonLastPage->setDisabled(true);
         return EXIT_FAILURE;
@@ -130,7 +128,7 @@ int qPDF::UpdatePage()
     }
 
     QString page_text = QString::number(m_current_page_number + 1) + "/" + QString::number(m_page_count);
-    ui.labelPageCount->setText(page_text);
+    ui.lineEditPageCount->setText(page_text);
 
     if (m_page_count == 1)
     {
@@ -166,7 +164,9 @@ int qPDF::UpdatePage()
 
     fz_matrix ctm{ 1, 0, 0, 1, 0, 0 };
     fz_try(m_ctx)
-        m_pixmap = fz_new_pixmap_from_page_number(m_ctx, m_doc, m_current_page_number, ctm, fz_device_rgb(m_ctx), 0);
+        m_pixmap = fz_new_pixmap_from_page_number(m_ctx, m_doc,
+                                                  m_current_page_number, 
+                                                  ctm, fz_device_rgb(m_ctx), 0);
     fz_catch(m_ctx)
     {
         fz_drop_document(m_ctx, m_doc);
@@ -187,8 +187,12 @@ int qPDF::UpdatePage()
     }
 
     QPixmap pixmap = QPixmap::fromImage(image);
-    QRect rect(0, 0, m_pixmap->w, m_pixmap->h);
-    ui.labelPage->setGeometry(rect);
     ui.labelPage->setPixmap(pixmap);
-    ui.labelPage->setScaledContents(true);
+
+    return EXIT_SUCCESS;
+}
+
+void qPDF::LoadZoomList()
+{
+
 }

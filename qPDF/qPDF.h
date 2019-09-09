@@ -23,6 +23,7 @@ public slots:
 private:
     void Clear();
     int UpdatePage();
+    void LoadZoomList();
     
     Ui::qPDFClass ui;
 
