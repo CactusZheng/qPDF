@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="pdf_document.h" />
+    <ClInclude Include="pdf_page.h" />
+    <ClInclude Include="pdf_dictionary.h" />
+    <ClInclude Include="pdf_stream.h" />
+    <ClInclude Include="pdf_form.h" />
+    <ClInclude Include="pdf_image.h" />
+    <ClInclude Include="pdf_array.h" />
+    <ClInclude Include="pdf_font.h" />
+    <ClInclude Include="pdf_outline.h" />
+    <ClInclude Include="pdf_indirect_object.h" />
+    <ClInclude Include="pdf_object.h" />
+  </ItemGroup>
+</Project>

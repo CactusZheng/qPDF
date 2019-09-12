@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qPDF", "qPDF\qPDF.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libmupdf", "third_party\mupdf\platform\win32\libmupdf.vcxproj", "{5F615F91-DFF8-4F05-BF48-6222B7D86519}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pdf_engine", "pdf_engine\pdf_engine.vcxproj", "{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -119,6 +121,50 @@ Global
 		{5F615F91-DFF8-4F05-BF48-6222B7D86519}.ReleaseOpenssl|x64.Build.0 = ReleaseOpenssl|x64
 		{5F615F91-DFF8-4F05-BF48-6222B7D86519}.ReleaseOpenssl|x86.ActiveCfg = ReleaseOpenssl|Win32
 		{5F615F91-DFF8-4F05-BF48-6222B7D86519}.ReleaseOpenssl|x86.Build.0 = ReleaseOpenssl|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.Debug|x64.ActiveCfg = Debug|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.Debug|x64.Build.0 = Debug|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.Debug|x86.ActiveCfg = Debug|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.Debug|x86.Build.0 = Debug|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.DebugCommercial|x64.ActiveCfg = Debug|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.DebugCommercial|x64.Build.0 = Debug|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.DebugCommercial|x86.ActiveCfg = Debug|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.DebugCommercial|x86.Build.0 = Debug|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.DebugJava|x64.ActiveCfg = Debug|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.DebugJava|x64.Build.0 = Debug|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.DebugJava|x86.ActiveCfg = Debug|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.DebugJava|x86.Build.0 = Debug|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.DebugOpenssl|x64.ActiveCfg = Debug|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.DebugOpenssl|x64.Build.0 = Debug|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.DebugOpenssl|x86.ActiveCfg = Debug|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.DebugOpenssl|x86.Build.0 = Debug|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.Memento|x64.ActiveCfg = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.Memento|x64.Build.0 = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.Memento|x86.ActiveCfg = Release|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.Memento|x86.Build.0 = Release|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.MementoCommercial|x64.ActiveCfg = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.MementoCommercial|x64.Build.0 = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.MementoCommercial|x86.ActiveCfg = Release|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.MementoCommercial|x86.Build.0 = Release|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.MementoOpenSSL|x64.ActiveCfg = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.MementoOpenSSL|x64.Build.0 = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.MementoOpenSSL|x86.ActiveCfg = Release|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.MementoOpenSSL|x86.Build.0 = Release|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.Release|x64.ActiveCfg = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.Release|x64.Build.0 = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.Release|x86.ActiveCfg = Release|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.Release|x86.Build.0 = Release|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.ReleaseCommercial|x64.ActiveCfg = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.ReleaseCommercial|x64.Build.0 = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.ReleaseCommercial|x86.ActiveCfg = Release|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.ReleaseCommercial|x86.Build.0 = Release|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.ReleaseJava|x64.ActiveCfg = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.ReleaseJava|x64.Build.0 = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.ReleaseJava|x86.ActiveCfg = Release|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.ReleaseJava|x86.Build.0 = Release|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.ReleaseOpenssl|x64.ActiveCfg = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.ReleaseOpenssl|x64.Build.0 = Release|x64
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.ReleaseOpenssl|x86.ActiveCfg = Release|Win32
+		{B1BBBD24-F4B0-4EA3-8FB0-6D69A533EF6D}.ReleaseOpenssl|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
