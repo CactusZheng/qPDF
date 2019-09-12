@@ -48,6 +48,8 @@ GeneratedFiles
 Win32\Debug
 third_party/mupdf
 
+qPDF.vcxproj.user
+
 *.idb
 *.log
 *.pdb
