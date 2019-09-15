@@ -1,16 +1,123 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="pdf_document.h" />
-    <ClInclude Include="pdf_page.h" />
-    <ClInclude Include="pdf_dictionary.h" />
-    <ClInclude Include="pdf_stream.h" />
-    <ClInclude Include="pdf_form.h" />
-    <ClInclude Include="pdf_image.h" />
-    <ClInclude Include="pdf_array.h" />
-    <ClInclude Include="pdf_font.h" />
-    <ClInclude Include="pdf_outline.h" />
-    <ClInclude Include="pdf_indirect_object.h" />
-    <ClInclude Include="pdf_object.h" />
+    <ClInclude Include="pdf_array_object.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_dictionary_object.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_indirect_object.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_null_object.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_object.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_stream_object.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_document.h">
+      <Filter>document_structure</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_file.h">
+      <Filter>file_structure</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_content_stream.h">
+      <Filter>content_streams</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_font.h">
+      <Filter>document_structure</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_page.h">
+      <Filter>document_structure</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_outline.h">
+      <Filter>document_structure</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_annotation.h">
+      <Filter>document_structure</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_bool_object.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_string_object.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_name_object.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_real_object.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_integer_object.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_filter.h">
+      <Filter>document_structure</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_x_ref_section.h">
+      <Filter>file_structure</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_x_ref_subsection.h">
+      <Filter>file_structure</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_x_ref_table.h">
+      <Filter>file_structure</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_indirect_ref.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_file_header.h">
+      <Filter>file_structure</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_file_body.h">
+      <Filter>file_structure</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf_file_trailer.h">
+      <Filter>file_structure</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="objects">
+      <UniqueIdentifier>{b6e088b2-44b0-436f-8a14-4bda55f404a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="file_structure">
+      <UniqueIdentifier>{29ff7cae-4e27-4aa6-a394-c37309fddcc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="document_structure">
+      <UniqueIdentifier>{43ba7f47-c42f-4cbb-9cc2-2cff73cec9f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="content_streams">
+      <UniqueIdentifier>{24067432-57ad-4e13-acb3-9933d1f79931}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pdf_stream_object.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf_indirect_object.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf_object.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf_integer_object.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf_string_object.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf_real_object.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf_dictionary_object.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf_array_object.cpp">
+      <Filter>objects</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

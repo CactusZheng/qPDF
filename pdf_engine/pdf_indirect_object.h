@@ -4,19 +4,25 @@
 
 #include <memory>
 
-class PdfObject;
+#include "pdf_object.h"
 
-class PdfIndirectObject
+/*
+  num gen obj
+  ...
+  endobj
+*/
+class PdfIndirectObject : public PdfObject
 {
 public:
+    PdfIndirectObject();
+    virtual ~PdfIndirectObject();
 
     // Positive integer, greater than 0.
-    uint32_t Num();
+    uint32_t num() const;
 
     // Non negative integer, including 0 and positive integer.
-    uint32_t Gen();
+    uint32_t gen() const;
 
-    std::shared_ptr<PdfObject> PdfObject();
-
+protected:
 
 };

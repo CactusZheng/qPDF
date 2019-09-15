@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -151,17 +151,42 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="pdf_array.h" />
-    <ClInclude Include="pdf_dictionary.h" />
+    <ClInclude Include="pdf_annotation.h" />
+    <ClInclude Include="pdf_array_object.h" />
+    <ClInclude Include="pdf_file_body.h" />
+    <ClInclude Include="pdf_bool_object.h" />
+    <ClInclude Include="pdf_content_stream.h" />
+    <ClInclude Include="pdf_dictionary_object.h" />
+    <ClInclude Include="pdf_file.h" />
+    <ClInclude Include="pdf_filter.h" />
     <ClInclude Include="pdf_font.h" />
-    <ClInclude Include="pdf_image.h" />
+    <ClInclude Include="pdf_file_header.h" />
     <ClInclude Include="pdf_indirect_object.h" />
+    <ClInclude Include="pdf_indirect_ref.h" />
+    <ClInclude Include="pdf_integer_object.h" />
+    <ClInclude Include="pdf_real_object.h" />
+    <ClInclude Include="pdf_name_object.h" />
+    <ClInclude Include="pdf_null_object.h" />
     <ClInclude Include="pdf_object.h" />
     <ClInclude Include="pdf_outline.h" />
-    <ClInclude Include="pdf_stream.h" />
+    <ClInclude Include="pdf_stream_object.h" />
     <ClInclude Include="pdf_document.h" />
-    <ClInclude Include="pdf_form.h" />
     <ClInclude Include="pdf_page.h" />
+    <ClInclude Include="pdf_string_object.h" />
+    <ClInclude Include="pdf_file_trailer.h" />
+    <ClInclude Include="pdf_x_ref_section.h" />
+    <ClInclude Include="pdf_x_ref_subsection.h" />
+    <ClInclude Include="pdf_x_ref_table.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pdf_array_object.cpp" />
+    <ClCompile Include="pdf_dictionary_object.cpp" />
+    <ClCompile Include="pdf_indirect_object.cpp" />
+    <ClCompile Include="pdf_integer_object.cpp" />
+    <ClCompile Include="pdf_object.cpp" />
+    <ClCompile Include="pdf_real_object.cpp" />
+    <ClCompile Include="pdf_stream_object.cpp" />
+    <ClCompile Include="pdf_string_object.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
